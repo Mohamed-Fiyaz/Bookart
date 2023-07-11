@@ -1,0 +1,35 @@
+.cart__item-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin: auto;
+  width: 45rem; /* Increase the width of the cart item list */
+  max-width: 90%;
+}
+
+.cart__item {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+}
+
+.cart__item h1 {
+  font-size: 1.2rem;
+  margin: 0;
+  flex: 1; /* Allow the h1 tags to expand and fill the remaining space */
+}
+
+.cart__item h2 {
+  font-size: 1.2rem;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 1.2rem; /* Adjust the right margin to create a gap of 3 letters */
+}
+
+.cart__total {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: right;
+}

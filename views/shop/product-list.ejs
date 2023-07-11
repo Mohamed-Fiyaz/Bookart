@@ -1,0 +1,95 @@
+<%- include('../includes/head.ejs') %>
+<link rel="stylesheet" href="/css/product.css">
+<script src="/js/scroll.js"></script>
+</head>
+
+<body>
+    <%- include('../includes/navigation.ejs') %>
+
+    <main>
+        <% if (prods.length > 0) { %>
+            <% let harryPotterProducts = prods.filter(product => product.title.includes('Harry Potter')); %>
+            <% let gameOfThronesProducts = prods.filter(product => product.title.includes('Game of Throne')); %>
+            <% let DiaryofaWimpyKidProducts = prods.filter(product => product.title.includes('Diary of a Wimpy Kid')); %>
+
+            <% if (harryPotterProducts.length > 0) { %>
+                <h1 class="theHeading">Harry Potter</h1>
+                <div class="grid">
+                    <% for (let product of harryPotterProducts) { %>
+                        <article class="card product-item">
+                            <header class="card__header">
+                                <h1 class="product__title"><%= product.title %></h1>
+                            </header>
+                            <div class="card__image">
+                                <img class="bookCover" src="<%= product.imageUrl %>" alt="<%= product.title %>">
+                            </div>
+                            <div class="card__content">
+                                <h2 class="product__price">₹<%= product.price %></h2>
+                                <p class="product__description"><%= product.description %></p>
+                            </div>
+                            <div class="card__actions">
+                                <a href="/details/<%= product.id %>" class="btn">Details</a>
+                                <%- include('../includes/add-to-cart.ejs', {product: product}) %>
+                            </div>
+                        </article>
+                    <% } %>
+                </div>
+            <% } %>
+            <hr>
+
+            <% if (gameOfThronesProducts.length > 0) { %>
+                <h1 class="theHeading2">A Song of Ice and Fire</h1>
+                <div class="grid">
+                    <% for (let product of gameOfThronesProducts) { %>
+                        <article class="card product-item">
+                            <header class="card__header">
+                                <h1 class="product__title"><%= product.title %></h1>
+                            </header>
+                            <div class="card__image">
+                                <img class="bookCover" src="<%= product.imageUrl %>" alt="<%= product.title %>">
+                            </div>
+                            <div class="card__content">
+                                <h2 class="product__price">₹<%= product.price %></h2>
+                                <p class="product__description"><%= product.description %></p>
+                            </div>
+                            <div class="card__actions">
+                                <a href="/details/<%= product.id %>" class="btn">Details</a>
+                                <%- include('../includes/add-to-cart.ejs', {product: product}) %>
+                            </div>
+                        </article>
+                    <% } %>
+                </div>
+            <% } %>
+            <hr>
+
+            <% if (DiaryofaWimpyKidProducts.length > 0) { %>
+                <h1 class="theHeading2">Diary of a Wimpy Kid</h1>
+                <div class="grid">
+                    <% for (let product of DiaryofaWimpyKidProducts) { %>
+                        <article class="card product-item">
+                            <header class="card__header">
+                                <h1 class="product__title"><%= product.title %></h1>
+                            </header>
+                            <div class="card__image">
+                                <img class="bookCover" src="<%= product.imageUrl %>" alt="<%= product.title %>">
+                            </div>
+                            <div class="card__content">
+                                <h2 class="product__price">₹<%= product.price %></h2>
+                                <p class="product__description"><%= product.description %></p>
+                            </div>
+                            <div class="card__actions">
+                                <a href="/details/<%= product.id %>" class="btn">Details</a>
+                                <%- include('../includes/add-to-cart.ejs', {product: product}) %>
+                            </div>
+                        </article>
+                    <% } %>
+                </div>
+            <% } %>
+            <button id="scrollButton" class="scroll-to-top">↑</button>
+
+        <% } else { %>
+            <h1>No Products Found</h1>
+        <% } %>
+    </main>
+<%- include('../includes/end.ejs') %>
+

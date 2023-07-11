@@ -1,0 +1,21 @@
+<nav class="navbar navbar-expand-lg" style="background-color: #B31312;">
+    <div class="container-fluid">
+        <a class="navbar-brand"><img src="/css/BookLogo.png" class="logo">Bookart</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <li id="main-header__item"><a id="thelink" class="nav-link <%= path === '/' ? 'active' : '' %>" aria-current="page" href="/">Standalone Books</a></li>
+                <li id="main-header__item"><a id="thelink" class="nav-link <%= path === '/novels' ? 'active' : '' %>" aria-current="page" href="/novels">Novels</a></li>
+                <li id="main-header__item"><a id="thelink" class="nav-link <%= path === '/cart' ? 'active' : '' %>" aria-current="page" href="/cart">Cart</a></li>
+                <li id="main-header__item"><a id="thelink" class="nav-link <%= path === '/orders' ? 'active' : '' %>" aria-current="page" href="/orders">Orders</a></li>
+                <li id="main-header__item"><a id="thelink" class="nav-link <%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product</a></li>
+                <li id="main-header__item"><a id="thelink" class="nav-link <%= path === '/admin/products' ? 'active' : '' %>" aria-current="page" href="/admin/products">Admin Products</a></li>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<div id="back">

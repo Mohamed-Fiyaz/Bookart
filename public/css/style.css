@@ -1,0 +1,97 @@
+.logo {
+    width: 30px;
+    height: 30px;
+}
+
+.navbar-brand {
+    font-family: 'Pacifico', cursive;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+#back {
+    background-color: #F0F0F0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.cart{
+    width:20px;
+    height: 20px; 
+}
+
+#thelink {
+    color:#2B2A4C;
+    font-weight: bold; 
+    font-family: 'Crimson Text', serif;
+    font-size: 19px;
+
+}
+
+#main-header__item a:hover,
+#main-header__item a:active,
+#main-header__item a.active {
+  color: #ffc107;
+}
+
+.navbar-nav .nav-link {
+    margin-right: 10px; 
+}
+
+.detailBox {
+    padding-left: 20%;
+    padding-right: 20%;
+
+}
+.bookCover {
+    height:400px;
+    width:300px;
+    margin-top: 1rem;
+}
+
+.theDetail {
+    margin-top: 1em;
+    font-size: 20px;
+}
+
+.thePrice{
+    margin-top: 1em;
+    font-size: 30px;
+}
+
+.theHeading {
+    margin-bottom: 1em;
+}
+
+.theHeading2 {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.scroll-to-top:hover {
+    opacity: 1;
+}
