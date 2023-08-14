@@ -1,5 +1,5 @@
 # Bookart
-This is an e-commerce website that sells standalone books and novels. This is a project website.
+Bookart is an e-commerce website that sells standalone books and novels. This is a project website.
 # Standalone Books Menu
 ![5D39444D-A8CE-443C-BB74-DFA590E1B863_1_201_a](https://github.com/Mohamed-Fiyaz/Bookart/assets/124451741/5d9fd736-decc-4cc3-baec-f25e8a24f3a9)
 
