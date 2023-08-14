@@ -12,7 +12,7 @@ The customer can check his cart and make the purchase.
 # Orders Menu
 ![0A7CB4A4-C2E7-4B41-BFE6-8FD2F579183E_1_201_a](https://github.com/Mohamed-Fiyaz/Bookart/assets/124451741/3dbfc4c2-4b67-486f-8e1d-e6c9d4481e1f)
 Once the purchase has been made the cart becomes empty automatically and the customer can check his receipt of the order in the Orders menu.
-# Add Products
+# Add Product
 ![2FFEE4B4-3037-466D-8E02-DD7D02CF2053_1_201_a](https://github.com/Mohamed-Fiyaz/Bookart/assets/124451741/bc084829-7a8f-4c63-a8b1-70d14cf9ae29)
 This is the place where a person who wants to sell a book can add it for sale on the website.
 # Admin Products
