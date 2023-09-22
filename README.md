@@ -24,6 +24,6 @@ Once the purchase has been made the cart becomes empty automatically and the cus
 
 This is the place where a person who wants to sell a book can add it for sale on the website.
 # Admin Products
-![A6D9B788-11E1-4532-BC94-D6CE48ADC316_1_201_a](https://github.com/Mohamed-Fiyaz/Bookart/assets/124451741/bcd9cab4-db94-4cde-9e94-bd5a9b108abb)
+<img width="1440" alt="Screenshot 2023-09-22 at 10 36 57 PM" src="https://github.com/Mohamed-Fiyaz/Bookart/assets/124451741/64ab459b-2beb-4021-b7b7-7a9b3ea7b201">
 
 Only admins can access this menu, and they can either edit or delete a certain product.
